@@ -1,5 +1,22 @@
 header{
     background-color: rgb(202, 199, 195);
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+h1 {
+    position: relative;
+    left: 200px;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 500px;
 }
 
 nav li{
@@ -16,3 +33,4 @@ nav a{
     text-decoration:wavy;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
