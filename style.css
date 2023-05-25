@@ -22,11 +22,12 @@ h1 {
 }
 nav {
     position: absolute;
-    top: 210px;
+    top: 220px;
     right: 300px;
 }
 
-.menu{
+nav li{
+
     display: inline;
     margin: 0 0 0 15px
 }
@@ -47,67 +48,93 @@ nav a:hover{
 nav a:active{
     color: #c2cfbb;
 }
-
-#banner{
-    width:100%;
+.products {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-.principal{
-    background: #f5f5f5;
-    padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-h2{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
-em strong{
-    color:red;
-}
-
-#mision{
-    font-size: 20px;
-}
-
-.diferenciales{
-    background: #FFFFFF;
-    padding: 30px;
-}
-
-h2{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.items{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-ul{
+.products li{
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* border: 2px solid #000000; Forma simplificada de poner bordes */
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
-.imagenDiferenciales{
-    width: 50%;
+.products li:hover{
+    border-color: rgb(129, 157, 158);
+
+}
+
+.products li:active{
+    border-color: #088c19;
+}
+
+.products h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.products li:hover h2{
+    font-size: 25px;
+}
+
+.description {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:  10px;
 }
 
 footer {
     text-align: center;
     background: url(imagenes/bg.jpg);
-    padding: 10px;
+    padding: 40px;
 }
 
 .Copyright {
     color: aliceblue;
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 5px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 0 auto;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+form label, form textarea, form p, form select{
+    display: block;
+    font-size: 15px;
+    margin: 0 30px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input_padron{
+    display: block;
+    margin: 0 30px 10px;
+    padding: 10px 25px;
+    width: 30%;
+}
+
+.checkbox{
+    margin: 20px;
 }

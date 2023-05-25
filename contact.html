@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Contacto | Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    
+    <body">
+        <header >         <!--Para el encabezado header -->
+            <div class="box" >
+                <h1><img src="imagenes/logo.png"></h1>
+                <nav> <!-- <!Para el panel de navegacion usar nav––« -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>     <!--a con href se utiliza para crear un enlace a otra pagina -->
+                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                     </ul>
+                </nav> 
+            </div>
+        </header>
+    
+        <main>
+            <!-- Para crear un formulario se utiliza form -->
+            <form>
+
+                <div>
+                    <!-- Para crear un label  -->
+                    <!-- Debo relacionar el label con la caja de texto a partir de un id y for -->
+                    <label for="name_surname">Nombre y apellido</label>
+                    <input type="text" id="name_surname" class="input_padron">
+
+                    <label for="Email"> Email</label>
+                    <input type="text" id="Email" class="input_padron">
+
+                    <label for="phone"> Telefono</label>
+                    <input type="text" id="phone" class="input_padron">
+                </div>
+
+                <!-- Crear caja de comentarios -->
+                <div>
+                    <label for="mensaje">Dejanos tu opinión en la caja de comentarios</label>
+                    <textarea cols="70" rows="10" id="mensaje">Comentario</textarea>
+                </div>
+
+
+                <!-- Crear listas con selección -->
+                <div>
+                    <p>¿Cómo le gustaría ser contactado?</p>
+                    <label for="radio-email"><input type="radio" name="contacto" 
+                    value="ratio-email" id="radio-email">Email</label>
+
+    
+                    <label for="Whatsapp"><input type="radio" name="contacto" 
+                    value="ratio-whatsapp" id="Whatsapp">Whatsapp</label>
+
+    
+                    <label for="Telefono"><input type="radio" name="contacto" 
+                    value="ratio-telefono" id="Telefono">Telefono</label>
+
+    
+                </div>
+
+                <div>
+                    <!-- Poner lista desplegable -->
+                    <p>¿En cuál horario prefiere ser atentido?</p>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+
+                <!-- Poner checkbox -->
+                <label class="checkbox"><input type="checkbox">¿Le gustaría recibir novedades de la Barbería Alura?</label>
+                <!-- Poner botón para enviar datos -->
+                <input type="submit" value="Enviar formulario" class="input_padron">
+            </form>
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="Copyright">&copy; Copyright Barbería Alura - 2023</p>
+        </footer>
+</body>
+
+</html>
