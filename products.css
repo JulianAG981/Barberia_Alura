@@ -1,9 +1,15 @@
 header{
-    background-color: rgb(202, 199, 195);
+    background:url(imagenes/istockphoto-1292922269-170667a.jpg);
+    background-size: contain;
+    height:250px;
+	width: 100%;
+	position: relative;
+	left:0;
+	top:0;
     padding: 20px 0;
 }
 
-.caja{
+.box{
     width: 940px;
     position: relative;
     margin: 0 auto;
@@ -11,12 +17,13 @@ header{
 
 h1 {
     position: relative;
-    left: 200px;
+    bottom: 35px;
+    left: 360px;
 }
 nav {
     position: absolute;
-    top: 110px;
-    right: 500px;
+    top: 220px;
+    right: 300px;
 }
 
 nav li{
@@ -27,10 +34,67 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 22px;
     text-decoration:wavy;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+nav a:hover{
+    color:rgb(129, 157, 158)
+}
+
+nav a:active{
+    color: #6bdb87;
+}
+.products {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* border: 2px solid #000000; Forma simplificada de poner bordes */
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.products li:hover{
+    border-color: rgb(129, 157, 158);
+
+}
+
+.products li:active{
+    border-color: #088c19;
+}
+
+.products h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.products li:hover h2{
+    font-size: 25px;
+}
+
+.description {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:  10px;
+}

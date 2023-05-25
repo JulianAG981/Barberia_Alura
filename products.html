@@ -4,31 +4,51 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Productos - Barberia Alura</title>
+        <title>Productos | Barberia Alura</title>
         <link rel="stylesheet" href="reset.css/reset.css">
         <link rel="stylesheet" href="estilo.css">
         <link rel="stylesheet" href="products.css">
     
     </head>
     
-    <body>
-
-        <header>
-            <div class="box">
+    <body">
+        <header >         <!--Para el encabezado header -->
+            <div class="box" >
                 <h1><img src="imagenes/logo.png"></h1>
-                <nav>
+                <nav> <!-- <!Para el panel de navegacion usar nav––« -->
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>     <!--a con href se utiliza para crear un enlace a otra pagina -->
                         <li><a href="products.html">Productos</a></li>
                         <li><a href="contacs.html">Contacto</a></li>
                      </ul>
                 </nav> 
             </div>
-
-
         </header>
     
-    
+        <main>  <!-- <!Para el cuerpo usamos main––« -->
+            <ul class="products">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="imagenes/cabello.jpg">
+                    <p class="description">Con tijera o magina a gusto del cliente</p> <!-- Para anhadir un parrafo se utiliza p -->
+                    <p class="price">$ 8.00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagenes/barba.jpg">
+                    <p class="description">Disenho profesional de barba</p>
+                    <p class="price">$ 10.00</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="imagenes/cabello+barba.jpg">
+                    <p class="description">Combo completo de cabello y barba</p>
+                    <p class="price">$ 15.00</p>
+                </li>
+            </ul>
+        </main>
     </body>
 
 </html>
+
+
