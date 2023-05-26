@@ -1,12 +1,12 @@
 header{
-    background:url(imagenes/istockphoto-1292922269-170667a.jpg);
-    background-size: contain;
-    height:250px;
+    background:url(imagenes/banner-desktop-barberia-v4.jpg);
+    background-size: cover;
+    height:400px;
 	width: 100%;
 	position: relative;
 	left:0;
 	top:0;
-    padding: 20px 0;
+    padding: 0px 0;
 }
 
 .box{
@@ -17,13 +17,13 @@ header{
 
 h1 {
     position: relative;
-    bottom: 35px;
-    left: 360px;
+    top: 10px;
+    left: 700px;
 }
 nav {
     position: absolute;
-    top: 220px;
-    right: 300px;
+    top: 320px;
+    right: 150px;
 }
 
 nav li{
@@ -102,7 +102,7 @@ nav a:active{
 footer {
     text-align: center;
     background: url(imagenes/bg.jpg);
-    padding: 40px;
+    padding: 10px;
 }
 
 .Copyright {
