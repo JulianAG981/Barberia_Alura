@@ -16,7 +16,7 @@
     <body">
         <header >         <!--Para el encabezado header -->
             <div class="box" >
-                <h1><img src="imagenes/logo.png"></h1>
+                <h1><img src="imagenes/logo.png" alt="Logo de la barbería Alura"></h1>
                 <nav> <!-- <!Para el panel de navegacion usar nav––« -->
                     <ul>
                         <li><a href="index.html">Home</a></li>     <!--a con href se utiliza para crear un enlace a otra pagina -->
@@ -52,8 +52,9 @@
 
 
                 <!-- Crear listas con selección -->
-                <div>
-                    <p>¿Cómo le gustaría ser contactado?</p>
+                <!-- fieldset se utiliza para agrupar item de un mismo grupo de datos -->
+                <fieldset>
+                    <legend>¿Cómo le gustaría ser contactado?</legend>
                     <label for="radio-email"><input type="radio" name="contacto" 
                     value="ratio-email" id="radio-email">Email</label>
 
@@ -66,26 +67,53 @@
                     value="ratio-telefono" id="Telefono">Telefono</label>
 
     
-                </div>
+                </fieldset>
 
-                <div>
+                <fieldset>
                     <!-- Poner lista desplegable -->
-                    <p>¿En cuál horario prefiere ser atentido?</p>
+                    <!-- legend se usa para marcar un titulo de un grupo de campos en un formulario -->
+                    <legend>¿En cuál horario prefiere ser atentido?</legend>
                     <select>
                         <option>Mañana</option>
                         <option>Tarde</option>
                         <option>Noche</option>
                     </select>
-                </div>
+                </fieldset>
 
                 <!-- Poner checkbox -->
                 <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
                 <!-- Poner botón para enviar datos -->
-                <input type="submit" value="Enviar formulario" class="input_padron">
+                <input type="submit" value="Enviar formulario" class="enviar">
             </form>
+
+            <!-- tr se utiliza para crear las filas en la tabla -->
+            <!-- td para crear las columnas en las filas -->
+            <table>
+                <thead>
+                    <tr>
+                        <td>Dia</td>
+                        <td>Hora</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00 hrs - 20:00 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08:00 hrs - 20:00 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00 hrs - 20:00 hrs</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <footer>
-            <img src="imagenes/logo-blanco.png">
+            <!-- alt se recomienda poner por si la imagen no carga, haya un texto explicando la imagen -->
+            <img src="imagenes/logo-blanco.png" alt="Logo de la barbería Alura">
             <p class="Copyright">&copy; Copyright Barbería Alura - 2023</p>
         </footer>
 </body>
