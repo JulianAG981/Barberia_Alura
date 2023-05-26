@@ -35,19 +35,19 @@
                     <!-- Para crear un label  -->
                     <!-- Debo relacionar el label con la caja de texto a partir de un id y for -->
                     <label for="name_surname">Nombre y apellido</label>
-                    <input type="text" id="name_surname" class="input_padron">
+                    <input type="text" id="name_surname" class="input_padron" required>
 
                     <label for="Email"> Email</label>
-                    <input type="text" id="Email" class="input_padron">
+                    <input type="email" id="Email" class="input_padron" required placeholder="email@dominio.com">
 
                     <label for="phone"> Telefono</label>
-                    <input type="text" id="phone" class="input_padron">
+                    <input type="tel" id="phone" class="input_padron" required placeholder="(XX) XXX XXXX">
                 </div>
 
                 <!-- Crear caja de comentarios -->
                 <div>
                     <label for="mensaje">Dejanos tu opinión en la caja de comentarios</label>
-                    <textarea cols="70" rows="10" id="mensaje">Comentario</textarea>
+                    <textarea cols="70" rows="10" id="mensaje"></textarea>
                 </div>
 
 
@@ -59,7 +59,7 @@
 
     
                     <label for="Whatsapp"><input type="radio" name="contacto" 
-                    value="ratio-whatsapp" id="Whatsapp">Whatsapp</label>
+                    value="ratio-whatsapp" id="Whatsapp" checked>Whatsapp</label>
 
     
                     <label for="Telefono"><input type="radio" name="contacto" 
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- Poner checkbox -->
-                <label class="checkbox"><input type="checkbox">¿Le gustaría recibir novedades de la Barbería Alura?</label>
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
                 <!-- Poner botón para enviar datos -->
                 <input type="submit" value="Enviar formulario" class="input_padron">
             </form>
