@@ -5,7 +5,7 @@ body{
 header{
     background:url(imagenes/banner-desktop-barberia-v4.jpg);
     background-size: cover;
-    height:400px;
+    height: 400px;
 	width: 100%;
 	position: relative;
 	left:0;
@@ -27,13 +27,13 @@ h1 {
 nav {
     position: absolute;
     top: 320px;
-    right: 100px;
+    right: 50px;
 }
 
 nav li{
-
     display: inline;
-    margin: 0 0 0 15px
+    margin: 0 0 0 15px;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 
 nav a{
@@ -205,7 +205,7 @@ img ~ p{
     background: linear-gradient(#fefefe, #ececed, #dadadb, #c8c8cb);
 }
 .video{
-    width: 2000px;
+    width: 100%;
     padding: 1em;
     margin: 0 auto;
     background: linear-gradient( #c8c8cb, #b7b7ba, #ababae, #9fa0a3, #939497);
@@ -213,15 +213,17 @@ img ~ p{
 
 .video2{
     width: 530px;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 .titulo-principal{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
     clear: left;
+    color: #120231;
+    text-shadow: 1px 1px 4px #030205 ;
 }
 
 .principal p{
@@ -288,4 +290,34 @@ img ~ p{
 }
 .imagenDiferenciales{
     width: 60%;
+    transition: 400ms;
+    /* Para poner sombreado se utiliza box-shadow */
+    box-shadow: 10px 10px 15px  1px #9fa0a3;
+}
+
+.imagenDiferenciales:hover{
+    /* Para darle opacidad */
+    opacity: 0.8;
+}
+
+/* Media Querys: Para hacer excepciones  o condiciones */
+@media screen and (max-width: 480px) {
+    h1{
+        position: static;
+    }
+
+    nav{
+        position: static;
+    }
+    .box, .principal, .mapa_contenido, .contenido_diferenciales, .video{
+        width: auto;
+    }
+
+    .video2{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .lista_diferenciles, .imagenDiferenciales{
+        width: 100%;
+    }
 }
