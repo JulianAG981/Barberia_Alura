@@ -309,7 +309,7 @@ img ~ p{
     nav{
         position: static;
     }
-    .box, .principal, .mapa_contenido, .contenido_diferenciales, .video{
+    .box, .principal, .mapa_contenido, .contenido_diferenciales, .video, .products{
         width: auto;
     }
 
