@@ -21,13 +21,13 @@ header{
 
 h1 {
     position: relative;
-    top: 10px;
-    left: 700px;
+    top: 30px;
+    left: 800px;
 }
 nav {
     position: absolute;
     top: 320px;
-    right: 150px;
+    right: 100px;
 }
 
 nav li{
@@ -112,11 +112,6 @@ footer {
     margin: 20px;
 }
 
-main{
-    width: 940px;
-    margin: 0 0 auto;
-}
-
 form {
     margin: 40px 0px;
 }
@@ -182,6 +177,45 @@ td, th{
     width: 100%;
 }
 
+/* Selectores avanzados */
+/* main > p{
+    background: red;
+}
+
+img + p{
+    background: yellow;
+}
+
+img ~ p{
+    background-color: gray;
+}
+
+.principal p:not(#mision){
+    background: orange;
+}  */
+
+.principal{
+    padding: 3em;
+    background-color: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    background: linear-gradient(#fefefe, #ececed, #dadadb, #c8c8cb);
+}
+.video{
+    width: 2000px;
+    padding: 1em;
+    margin: 0 auto;
+    background: linear-gradient( #c8c8cb, #b7b7ba, #ababae, #9fa0a3, #939497);
+}
+
+.video2{
+    width: 530px;
+    margin-left: 20%;
+}
+
 .titulo-principal{
     text-align: center;
     font-size: 2em;
@@ -204,12 +238,54 @@ td, th{
 }
 
 .utencilios{
+    /* width: calc(40% -(26px *4)); PARA DIMENSIONAR EN CUALQUIER DIMENSION DE PANTALLAS SE USA CALC*/
     width: 120px;
-    /* float sirve para irven para que el elemento se destaque en la pantalla, la superficie del elemento continúa siendo utilizada y los otros elementos de texto o elementos en línea se posicionan alrededor de él. */
+    /* float sirve para sirven para que el elemento se destaque en la pantalla, la superficie del elemento continúa siendo utilizada y los otros elementos de texto o elementos en línea se posicionan alrededor de él. */
     float: left;
     margin: 0 10px 20px 0;
 }
 
+.map{
+    padding: 3em 0;
+    background: linear-gradient(#939497,   #8a8a8d, #808183, #77777a, #6e6e70);
+
+}
+
+.map p{
+    margin: 0 0 2em;
+    text-align: center;
+
+}
+
+.mapa_contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.contenido_diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista_diferenciles{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.items{
+    /* line-height para aumentar el espaciamiento entre parrafos */
+    line-height: 1.5;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.items::before{
+    content: "➤";
+}
 .imagenDiferenciales{
     width: 60%;
 }
