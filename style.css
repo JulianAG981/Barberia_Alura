@@ -313,6 +313,11 @@ img ~ p{
         width: auto;
     }
 
+    .products li{
+        display: block;
+        text-align: center;
+    }
+    
     .video2{
         width: 100%;
         margin-left: 0%;
